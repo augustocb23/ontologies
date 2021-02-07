@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12">
+    <Prefix name="" IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AcademicJournal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcademicWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DoctoralThesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalInstitute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeneralUseOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graduating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mastering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MastersThesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhdStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SampleOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScientificArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecificDomainOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symposium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thesis"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AcademicJournal"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcademicWork"/>
+        <Class IRI="#Reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#Reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoctoralThesis"/>
+        <Class IRI="#Thesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalInstitute"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneralUseOntology"/>
+        <Class IRI="#Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graduating"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Link"/>
+        <Class IRI="#Reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mastering"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MastersThesis"/>
+        <Class IRI="#Thesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhdStudent"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SampleOntology"/>
+        <Class IRI="#Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScientificArticle"/>
+        <Class IRI="#AcademicWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecificDomainOntology"/>
+        <Class IRI="#Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symposium"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thesis"/>
+        <Class IRI="#AcademicWork"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
