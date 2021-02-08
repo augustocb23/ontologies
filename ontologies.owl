@@ -118,7 +118,7 @@
         <ObjectProperty IRI="#hasKeyword"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasQuote"/>
+        <ObjectProperty IRI="#hasQuoted"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasReference"/>
@@ -1162,6 +1162,10 @@
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Ontology"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Reference"/>
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
     </ClassAssertion>
@@ -1346,6 +1350,26 @@
         <ObjectProperty IRI="#authorOf"/>
         <NamedIndividual IRI="#DavidWood"/>
         <NamedIndividual IRI="#LinkedDataStructuredDataOnTheWeb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#quotedBy"/>
+        <NamedIndividual IRI="#DavidWood"/>
+        <NamedIndividual IRI="#DaltonLopesMartins"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#quotedBy"/>
+        <NamedIndividual IRI="#DavidWood"/>
+        <NamedIndividual IRI="#JoyceSiqueira"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#quotedBy"/>
+        <NamedIndividual IRI="#DavidWood"/>
+        <NamedIndividual IRI="#MarcelFerranteSilva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#quotedIn"/>
+        <NamedIndividual IRI="#DavidWood"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAdvisor"/>
@@ -1548,6 +1572,11 @@
         <NamedIndividual IRI="#DavidWood"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#referencedBy"/>
+        <NamedIndividual IRI="#LinkedDataStructuredDataOnTheWeb"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#authorOf"/>
         <NamedIndividual IRI="#MarcelFerranteSilva"/>
         <NamedIndividual IRI="#DigitalLibrariesRepresentation"/>
@@ -1576,6 +1605,11 @@
         <ObjectProperty IRI="#hasDomain"/>
         <NamedIndividual IRI="#ModeloDeBiodiversidade"/>
         <NamedIndividual IRI="#Biodiversidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#referencedBy"/>
+        <NamedIndividual IRI="#OwlWebOntologyLanguageGuide"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDomain"/>
@@ -1716,6 +1750,11 @@
         <ObjectProperty IRI="#hasKeyword"/>
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
         <NamedIndividual IRI="#WebSemantica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasQuoted"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <NamedIndividual IRI="#DavidWood"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasReference"/>
@@ -1984,7 +2023,7 @@
         <ObjectProperty IRI="#instituteOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasQuote"/>
+        <ObjectProperty IRI="#hasQuoted"/>
         <ObjectProperty IRI="#quotedIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
@@ -2022,7 +2061,7 @@
         <ObjectProperty IRI="#hasInstitute"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasQuote"/>
+        <ObjectProperty IRI="#hasQuoted"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasReference"/>
@@ -2073,7 +2112,7 @@
         <ObjectProperty IRI="#hasKeyword"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasQuote"/>
+        <ObjectProperty IRI="#hasQuoted"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasReference"/>
@@ -2151,12 +2190,16 @@
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasQuote"/>
+        <ObjectProperty IRI="#hasQuoted"/>
         <Class IRI="#Reference"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasReference"/>
         <Class IRI="#AcademicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReference"/>
+        <Class IRI="#Reference"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#quotedBy"/>
@@ -2251,7 +2294,7 @@
         </DataAllValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasQuote"/>
+        <ObjectProperty IRI="#hasQuoted"/>
         <Class IRI="#Author"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -2276,6 +2319,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#referencedBy"/>
         <Class IRI="#AcademicWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#referencedBy"/>
+        <Class IRI="#Reference"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#wasPublished"/>
