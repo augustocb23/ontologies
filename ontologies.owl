@@ -100,6 +100,9 @@
         <ObjectProperty IRI="#hasKeyword"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasReference"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#wasPublished"/>
     </Declaration>
     <Declaration>
@@ -172,10 +175,22 @@
         <NamedIndividual IRI="#CaioSaraivaConeglian"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CienciaDaInformacaoEmRevista"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#CountryBorders"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DaltonLopesMartins"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DigitalLibrariesRepresentation"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FamilyTree"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Inferencias"/>
@@ -184,10 +199,25 @@
         <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#JoyceSiqueira"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#LinkedData"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MarcelFerranteSilva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ModeloConceitual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ontologia"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Ontologias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RepositorioDigital"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SimpsonsFamilyTree"/>
@@ -199,13 +229,31 @@
         <NamedIndividual IRI="#Sparql"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#UEL"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Unesp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversidadeDeBrasilia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversidadeEstadualDeLondrina"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#UniversidadeFederalDeGoias"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#WebSemantica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Informacao&amp;Informacao"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
@@ -320,8 +368,20 @@
         <Class IRI="#SpecificDomainOntology"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#CaioSaraivaConeglian"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Student"/>
         <NamedIndividual IRI="#CaioSaraivaConeglian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicJournal"/>
+        <NamedIndividual IRI="#CienciaDaInformacaoEmRevista"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Publication"/>
+        <NamedIndividual IRI="#CienciaDaInformacaoEmRevista"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Ontology"/>
@@ -332,12 +392,88 @@
         <NamedIndividual IRI="#CountryBorders"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#DaltonLopesMartins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#DaltonLopesMartins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeneralUseOntology"/>
+        <NamedIndividual IRI="#DigitalLibrariesRepresentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ontology"/>
+        <NamedIndividual IRI="#DigitalLibrariesRepresentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicWork"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ScientificArticle"/>
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Ontology"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SampleOntology"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#Inferencias"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Professor"/>
         <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#JoyceSiqueira"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#JoyceSiqueira"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#LinkedData"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#MarcelFerranteSilva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#MarcelFerranteSilva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#ModeloConceitual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#Ontologia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#Ontologias"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#RepositorioDigital"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Ontology"/>
@@ -352,17 +488,89 @@
         <NamedIndividual IRI="#SmallOntology"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#Sparql"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EducationalInstitute"/>
+        <NamedIndividual IRI="#UEL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#UEL"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EducationalInstitute"/>
         <NamedIndividual IRI="#Unesp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#Unesp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EducationalInstitute"/>
+        <NamedIndividual IRI="#UniversidadeDeBrasilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#UniversidadeDeBrasilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EducationalInstitute"/>
+        <NamedIndividual IRI="#UniversidadeEstadualDeLondrina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#UniversidadeEstadualDeLondrina"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EducationalInstitute"/>
         <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EducationalInstitute"/>
+        <NamedIndividual IRI="#UniversidadeFederalDeGoias"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#UniversidadeFederalDeGoias"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Keyword"/>
         <NamedIndividual IRI="#WebSemantica"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicWork"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ScientificArticle"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicJournal"/>
+        <NamedIndividual IRI="#Informacao&amp;Informacao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Publication"/>
+        <NamedIndividual IRI="#Informacao&amp;Informacao"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Ontologia"/>
+        <NamedIndividual IRI="#Ontologias"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#UEL"/>
+        <NamedIndividual IRI="#UniversidadeEstadualDeLondrina"/>
+    </SameIndividual>
     <SameIndividual>
         <NamedIndividual IRI="#Unesp"/>
         <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
@@ -373,14 +581,34 @@
         <NamedIndividual IRI="#Unesp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <NamedIndividual IRI="#CaioSaraivaConeglian"/>
+        <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasKeyword"/>
         <NamedIndividual IRI="#CountryBorders"/>
         <NamedIndividual IRI="#SmallOntology"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <NamedIndividual IRI="#DaltonLopesMartins"/>
+        <NamedIndividual IRI="#UniversidadeDeBrasilia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+        <NamedIndividual IRI="#DigitalLibrariesRepresentation"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasExample"/>
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
         <NamedIndividual IRI="#CountryBorders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+        <NamedIndividual IRI="#FamilyTree"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasKeyword"/>
@@ -391,6 +619,11 @@
         <ObjectProperty IRI="#hasKeyword"/>
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
         <NamedIndividual IRI="#LinkedData"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+        <NamedIndividual IRI="#Ontologia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasKeyword"/>
@@ -408,19 +641,94 @@
         <NamedIndividual IRI="#WebSemantica"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasPublished"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+        <NamedIndividual IRI="#Informacao&amp;Informacao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInstitute"/>
         <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
         <NamedIndividual IRI="#Unesp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
+        <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <NamedIndividual IRI="#JoyceSiqueira"/>
+        <NamedIndividual IRI="#UniversidadeDeBrasilia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <NamedIndividual IRI="#MarcelFerranteSilva"/>
+        <NamedIndividual IRI="#UniversidadeFederalDeGoias"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasKeyword"/>
         <NamedIndividual IRI="#SimpsonsFamilyTree"/>
         <NamedIndividual IRI="#SmallOntology"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <NamedIndividual IRI="#ModeloConceitual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <NamedIndividual IRI="#Ontologia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <NamedIndividual IRI="#Ontologias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <NamedIndividual IRI="#RepositorioDigital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <NamedIndividual IRI="#WebSemantica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasPublished"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <NamedIndividual IRI="#CienciaDaInformacaoEmRevista"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <NamedIndividual IRI="#Informacao&amp;Informacao"/>
+        <NamedIndividual IRI="#UEL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <NamedIndividual IRI="#Informacao&amp;Informacao"/>
+        <NamedIndividual IRI="#UniversidadeEstadualDeLondrina"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Author"/>
+        <NamedIndividual IRI="#CaioSaraivaConeglian"/>
+        <Literal>Caio Saraiva Coneglian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Author"/>
+        <NamedIndividual IRI="#CaioSaraivaConeglian"/>
+        <Literal>Mestrado em Ciência da Informação</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#AuthorName"/>
         <NamedIndividual IRI="#CaioSaraivaConeglian"/>
         <Literal>Caio Saraiva Coneglian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student"/>
+        <NamedIndividual IRI="#CaioSaraivaConeglian"/>
+        <Literal>Mestrado em Ciência da Informação</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#StudentCourseName"/>
@@ -438,6 +746,31 @@
         <Literal>Country Borders</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Author"/>
+        <NamedIndividual IRI="#DaltonLopesMartins"/>
+        <Literal>Dalton Lopes Martins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AuthorName"/>
+        <NamedIndividual IRI="#DaltonLopesMartins"/>
+        <Literal>Dalton Lopes Martins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Reference"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+        <Literal>10.5433/1981-8920.2016v21n2p217</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Reference"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Reference"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+        <Literal>Web Semântica e Ontologias: Um Estudo Sobre Construção de Axiomas e Uso de Inferências</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ReferencePublicationYear"/>
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
@@ -453,14 +786,49 @@
         <Literal>10.5433/1981-8920.2016v21n2p217</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Author"/>
+        <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
+        <Literal>José Eduardo Santarem Segundo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Author"/>
+        <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
+        <Literal>Programa de Pós-Graduação em Ciência da Informação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#AuthorName"/>
         <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
         <Literal>José Eduardo Santarem Segundo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Professor"/>
+        <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
+        <Literal>Programa de Pós-Graduação em Ciência da Informação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ProfessorDepartment"/>
         <NamedIndividual IRI="#JoseEduardoSantarenSegundo"/>
         <Literal>Programa de Pós-Graduação em Ciência da Informação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Author"/>
+        <NamedIndividual IRI="#JoyceSiqueira"/>
+        <Literal>Joyce Siqueira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AuthorName"/>
+        <NamedIndividual IRI="#JoyceSiqueira"/>
+        <Literal>Joyce Siqueira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Author"/>
+        <NamedIndividual IRI="#MarcelFerranteSilva"/>
+        <Literal>Marcel Ferrante Silva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AuthorName"/>
+        <NamedIndividual IRI="#MarcelFerranteSilva"/>
+        <Literal>Marcel Ferrante Silva</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Ontology"/>
@@ -473,19 +841,79 @@
         <Literal>The Simpsons Family Tree</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Institute"/>
+        <NamedIndividual IRI="#Unesp"/>
+        <Literal>Universidade Estadual Paulista</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#InstituteName"/>
+        <NamedIndividual IRI="#Unesp"/>
+        <Literal>Universidade Estadual Paulista</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Institute"/>
+        <NamedIndividual IRI="#UniversidadeDeBrasilia"/>
+        <Literal>Universidade de Brasília</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#InstituteName"/>
+        <NamedIndividual IRI="#UniversidadeDeBrasilia"/>
+        <Literal>Universidade de Brasília</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Institute"/>
+        <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
+        <Literal>Universidade Estadual Paulista</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#InstituteName"/>
         <NamedIndividual IRI="#UniversidadeEstadualPaulista"/>
         <Literal>Universidade Estadual Paulista</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasInstitute"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Institute"/>
+        <NamedIndividual IRI="#UniversidadeFederalDeGoias"/>
+        <Literal>Universidade Federal de Goiás</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#InstituteName"/>
+        <NamedIndividual IRI="#UniversidadeFederalDeGoias"/>
+        <Literal>Universidade Federal de Goiás</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Reference"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Reference"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <Literal>Web semântica em repositórios: ontologia para representação de bibliotecas digitais</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ReferencePublicationYear"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ReferenceTitle"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <Literal>Web semântica em repositórios: ontologia para representação de bibliotecas digitais</Literal>
+    </DataPropertyAssertion>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasAcademicWork"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAuthor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasExample"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasInstitute"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasReference"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#wasPublished"/>
@@ -494,10 +922,19 @@
         <ObjectProperty IRI="#hasAcademicWork"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasAuthor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasExample"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasInstitute"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasKeyword"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasReference"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#wasPublished"/>
@@ -525,6 +962,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAcademicWork"/>
         <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExample"/>
+        <Class IRI="#Ontology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasExample"/>
@@ -744,6 +1189,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#ReferenceTitle"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ScientificArticleDoi"/>
         <Class IRI="#Reference"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
