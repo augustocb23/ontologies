@@ -93,6 +93,87 @@
     <Declaration>
         <Class IRI="#Thesis"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInstitute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKeyword"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasPublished"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AuthorBirthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AuthorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BookIsbn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BookName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Domain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Institute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InstituteName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Link"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LinkAccessDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LinkUrl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Ontology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OntologyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ProfessorDepartment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ReferencePublicationYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ReferenceTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StudentCourseName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SmallOntology"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#AcademicJournal"/>
         <Class IRI="#Publication"/>
@@ -177,6 +258,242 @@
         <Class IRI="#Thesis"/>
         <Class IRI="#AcademicWork"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#GeneralUseOntology"/>
+        <Class IRI="#SampleOntology"/>
+        <Class IRI="#SpecificDomainOntology"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#SampleOntology"/>
+        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyword"/>
+        <NamedIndividual IRI="#SmallOntology"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
+        <NamedIndividual IRI="#SmallOntology"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#OntologyName"/>
+        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
+        <Literal>The Simpsons Family Tree</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInstitute"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#wasPublished"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInstitute"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasKeyword"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#wasPublished"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+        <Class IRI="#Ontology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasPublished"/>
+        <Class IRI="#AcademicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+        <Class IRI="#AcademicWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInstitute"/>
+        <Class IRI="#Institute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <Class IRI="#Keyword"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasPublished"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AuthorBirthDate"/>
+        <DataProperty IRI="#Author"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AuthorName"/>
+        <DataProperty IRI="#Author"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Book"/>
+        <DataProperty IRI="#Reference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#BookIsbn"/>
+        <DataProperty IRI="#Book"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#BookName"/>
+        <DataProperty IRI="#Book"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Domain"/>
+        <DataProperty IRI="#Ontology"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#InstituteName"/>
+        <DataProperty IRI="#Institute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Link"/>
+        <DataProperty IRI="#Reference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LinkAccessDate"/>
+        <DataProperty IRI="#Link"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LinkUrl"/>
+        <DataProperty IRI="#Link"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OntologyName"/>
+        <DataProperty IRI="#Ontology"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Professor"/>
+        <DataProperty IRI="#Author"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ProfessorDepartment"/>
+        <DataProperty IRI="#Professor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ReferencePublicationYear"/>
+        <DataProperty IRI="#Reference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ReferenceTitle"/>
+        <DataProperty IRI="#Reference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Student"/>
+        <DataProperty IRI="#Author"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#StudentCourseName"/>
+        <DataProperty IRI="#Student"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Author"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AuthorBirthDate"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AuthorName"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Book"/>
+        <Class IRI="#Book"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Institute"/>
+        <Class IRI="#Institute"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Link"/>
+        <Class IRI="#Link"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Ontology"/>
+        <Class IRI="#Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OntologyName"/>
+        <Class IRI="#Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Professor"/>
+        <Class IRI="#Professor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Reference"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Student"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AuthorBirthDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AuthorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#BookIsbn"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#BookName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Domain"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#InstituteName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LinkAccessDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LinkUrl"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OntologyName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ProfessorDepartment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ReferencePublicationYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ReferenceTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StudentCourseName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
 </Ontology>
 
 
