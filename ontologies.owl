@@ -274,12 +274,6 @@
         <NamedIndividual IRI="#RepositorioDigital"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SmallOntology"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Sparql"/>
     </Declaration>
     <Declaration>
@@ -1021,25 +1015,6 @@
         <NamedIndividual IRI="#RepositorioDigital"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ontology"/>
-        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SampleOntology"/>
-        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Keyword"/>
-        <NamedIndividual IRI="#SmallOntology"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#Domain"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#SmallOntology"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Keyword"/>
         <NamedIndividual IRI="#Sparql"/>
     </ClassAssertion>
@@ -1162,19 +1137,11 @@
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ontology"/>
-        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Reference"/>
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ScientificArticle"/>
-        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SpecificDomainOntology"/>
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1322,9 +1289,39 @@
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+        <NamedIndividual IRI="#CountryBorders"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasKeyword"/>
         <NamedIndividual IRI="#CountryBorders"/>
-        <NamedIndividual IRI="#SmallOntology"/>
+        <NamedIndividual IRI="#Inferencias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#CountryBorders"/>
+        <NamedIndividual IRI="#LinkedData"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#CountryBorders"/>
+        <NamedIndividual IRI="#Ontologia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#CountryBorders"/>
+        <NamedIndividual IRI="#Ontologias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#CountryBorders"/>
+        <NamedIndividual IRI="#Sparql"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#CountryBorders"/>
+        <NamedIndividual IRI="#WebSemantica"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#authorOf"/>
@@ -1512,6 +1509,41 @@
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicWork"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+        <NamedIndividual IRI="#Inferencias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+        <NamedIndividual IRI="#LinkedData"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+        <NamedIndividual IRI="#Ontologia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+        <NamedIndividual IRI="#Ontologias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+        <NamedIndividual IRI="#Sparql"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#FamilyTree"/>
+        <NamedIndividual IRI="#WebSemantica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#instituteOf"/>
         <NamedIndividual IRI="#GeneOntology"/>
         <NamedIndividual IRI="#PlantGeneSubset"/>
@@ -1620,11 +1652,6 @@
         <ObjectProperty IRI="#hasInstitute"/>
         <NamedIndividual IRI="#PlantGeneSubset"/>
         <NamedIndividual IRI="#GeneOntology"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasKeyword"/>
-        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
-        <NamedIndividual IRI="#SmallOntology"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#instituteOf"/>
@@ -1848,6 +1875,16 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ReferencePublicationYear"/>
+        <NamedIndividual IRI="#DesenvolvimentoOntologiaDeBiodiversidade"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ReferenceTitle"/>
+        <NamedIndividual IRI="#DesenvolvimentoOntologiaDeBiodiversidade"/>
+        <Literal>Desenvolvimento de uma ontologia de domínio para modelagem de biodiversidade</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ReferencePublicationYear"/>
         <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
     </DataPropertyAssertion>
@@ -1940,11 +1977,6 @@
         <DataProperty IRI="#LinkUrl"/>
         <NamedIndividual IRI="#PlantGeneSubset"/>
         <Literal>http://current.geneontology.org/ontology/subsets/goslim_plant.owl</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Ontology"/>
-        <NamedIndividual IRI="#SimpsonsFamilyTree"/>
-        <Literal>The Simpsons Family Tree</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Institute"/>
@@ -2043,6 +2075,9 @@
         <ObjectProperty IRI="#authorOf"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#exampleFor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasAcademicWork"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
@@ -2089,6 +2124,9 @@
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#authorOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#exampleFor"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasAcademicWork"/>
@@ -2480,6 +2518,42 @@
         <DataProperty IRI="#StudentCourseName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>exempleFor</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Ontology"/>
+                <Variable IRI="#o"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#exampleFor"/>
+                <Variable IRI="#o"/>
+                <Variable IRI="#a"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#AcademicWork"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAcademicWork"/>
+                <Variable IRI="#o"/>
+                <Variable IRI="#a"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
     <DLSafeRule>
         <Annotation>
             <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
