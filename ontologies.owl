@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12"
+     xml:base="http://www.semanticweb.org/augustocb23/ontologies"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12">
+     ontologyIRI="http://www.semanticweb.org/augustocb23/ontologies">
     <Prefix name="" IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -2514,23 +2514,23 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Ontology"/>
-                <Variable IRI="#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#AcademicWork"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#exampleFor"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
             </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#AcademicWork"/>
-                <Variable IRI="#a"/>
-            </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasAcademicWork"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -2548,26 +2548,100 @@
             <Literal>QuotedIn</Literal>
         </Annotation>
         <Body>
-            <ClassAtom>
-                <Class IRI="#AcademicWork"/>
-                <Variable IRI="#w"/>
-            </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasReference"/>
-                <Variable IRI="#w"/>
-                <Variable IRI="#r"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#r"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasAuthor"/>
-                <Variable IRI="#r"/>
-                <Variable IRI="#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#r"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
             </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#AcademicWork"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#quotedIn"/>
-                <Variable IRI="#a"/>
-                <Variable IRI="#w"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If an ontology has an academic work, then they&apos;ll have the same author</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>OntologyHasAuthor</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Ontology"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAcademicWork"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAuthor"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAuthor"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If an ontology has some keyword, then they&apos;ll have the same</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>OntologyHasKeyword</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasKeyword"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Ontology"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAcademicWork"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasKeyword"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -2587,93 +2661,19 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Ontology"/>
-                <Variable IRI="#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasDomain"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#d"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#d"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ClassAtom>
                 <Class IRI="#SpecificDomainOntology"/>
-                <Variable IRI="#o"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#o"/>
             </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If an ontology has an academic work, then they&apos;ll have the same author</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>OntologyHasAuthor</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Ontology"/>
-                <Variable IRI="#o"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAcademicWork"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#a"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAuthor"/>
-                <Variable IRI="#a"/>
-                <Variable IRI="#w"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAuthor"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#w"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If an ontology has some keyword, then they&apos;ll have the same</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>OntologyHasKeyword</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Ontology"/>
-                <Variable IRI="#o"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasAcademicWork"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#a"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasKeyword"/>
-                <Variable IRI="#a"/>
-                <Variable IRI="#w"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasKeyword"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#w"/>
-            </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -2692,20 +2692,20 @@
         <Body>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#quotedIn"/>
-                <Variable IRI="#q"/>
-                <Variable IRI="#w"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#q"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasAuthor"/>
-                <Variable IRI="#w"/>
-                <Variable IRI="#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#w"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#quotedBy"/>
-                <Variable IRI="#q"/>
-                <Variable IRI="#a"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#q"/>
+                <Variable IRI="http://www.semanticweb.org/augus/ontologies/2021/1/untitled-ontology-12#a"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
