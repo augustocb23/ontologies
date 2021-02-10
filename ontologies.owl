@@ -124,9 +124,6 @@
         <ObjectProperty IRI="#hasReference"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasUrl"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#instituteOf"/>
     </Declaration>
     <Declaration>
@@ -158,9 +155,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#LinkAccessDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#LinkUrl"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Ontology"/>
@@ -1839,6 +1833,11 @@
         <Literal>Programa de Pós-graduação em Informática</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Link"/>
+        <NamedIndividual IRI="#AutomaticClassificationOfEpilepsyTypes"/>
+        <Literal>https://www.sciencedirect.com/science/article/pii/S0933365714000207</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ReferencePublicationYear"/>
         <NamedIndividual IRI="#AutomaticClassificationOfEpilepsyTypes"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2014</Literal>
@@ -1874,6 +1873,11 @@
         <Literal>Dalton Lopes Martins</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Link"/>
+        <NamedIndividual IRI="#DesenvolvimentoOntologiaDeBiodiversidade"/>
+        <Literal>https://tede.ufam.edu.br/handle/tede/2887</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ReferencePublicationYear"/>
         <NamedIndividual IRI="#DesenvolvimentoOntologiaDeBiodiversidade"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2011</Literal>
@@ -1882,6 +1886,11 @@
         <DataProperty IRI="#ReferenceTitle"/>
         <NamedIndividual IRI="#DesenvolvimentoOntologiaDeBiodiversidade"/>
         <Literal>Desenvolvimento de uma ontologia de domínio para modelagem de biodiversidade</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Link"/>
+        <NamedIndividual IRI="#EstudoSobreConstrucaoDeAxiomasUsoDeInferencias"/>
+        <Literal>http://www.uel.br/revistas/uel/index.php/informacao/article/view/26417</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ReferencePublicationYear"/>
@@ -1946,11 +1955,6 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#Link"/>
         <NamedIndividual IRI="#OwlWebOntologyLanguageGuide"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-15T00:00:00Z</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Link"/>
-        <NamedIndividual IRI="#OwlWebOntologyLanguageGuide"/>
         <Literal>https://www.w3.org/TR/2004/REC-owl-guide-20040210</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -1959,22 +1963,12 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-15T00:00:00Z</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#LinkUrl"/>
-        <NamedIndividual IRI="#OwlWebOntologyLanguageGuide"/>
-        <Literal>https://www.w3.org/TR/2004/REC-owl-guide-20040210</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#ReferenceTitle"/>
         <NamedIndividual IRI="#OwlWebOntologyLanguageGuide"/>
         <Literal>OWL Web Ontology: Language Guide</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Link"/>
-        <NamedIndividual IRI="#PlantGeneSubset"/>
-        <Literal>http://current.geneontology.org/ontology/subsets/goslim_plant.owl</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#LinkUrl"/>
         <NamedIndividual IRI="#PlantGeneSubset"/>
         <Literal>http://current.geneontology.org/ontology/subsets/goslim_plant.owl</Literal>
     </DataPropertyAssertion>
@@ -2014,6 +2008,11 @@
         <Literal>Universidade Federal do Amazonas</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Link"/>
+        <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
+        <Literal>https://www.seer.ufal.br/index.php/cir/article/view/5566/5872</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#ReferencePublicationYear"/>
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
@@ -2022,6 +2021,11 @@
         <DataProperty IRI="#ReferenceTitle"/>
         <NamedIndividual IRI="#WebSemanticaEmRepositorios"/>
         <Literal>Web semântica em repositórios: ontologia para representação de bibliotecas digitais</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Link"/>
+        <NamedIndividual IRI="#WebSemanticaIntroducaoAoSparql"/>
+        <Literal>http://200.20.0.78/repositorios/bitstream/handle/123456789/3191/2014_GT8-CO_09.pdf</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ReferencePublicationYear"/>
@@ -2065,9 +2069,6 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasAcademicWork"/>
     </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasUrl"/>
-    </FunctionalObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#advised"/>
     </AsymmetricObjectProperty>
@@ -2096,13 +2097,13 @@
         <ObjectProperty IRI="#hasInstitute"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasKeyword"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasQuoted"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasReference"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasUrl"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#instituteOf"/>
@@ -2307,10 +2308,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDomain"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#Domain"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataAllValuesFrom>
+        <Class IRI="#Domain"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasExample"/>
@@ -2325,26 +2323,12 @@
         <Class IRI="#Keyword"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasKeyword"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#Domain"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataAllValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasQuoted"/>
         <Class IRI="#Author"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasReference"/>
         <Class IRI="#Reference"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasUrl"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#LinkUrl"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#quotedBy"/>
@@ -2371,10 +2355,6 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#LinkUrl"/>
-        <DataProperty IRI="#Link"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#ReferencePublicationYear"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -2396,7 +2376,7 @@
         <DataProperty IRI="#Domain"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#LinkUrl"/>
+        <DataProperty IRI="#Link"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#ProfessorDepartment"/>
@@ -2491,12 +2471,12 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#LinkAccessDate"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
+        <DataProperty IRI="#Link"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#LinkUrl"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataProperty IRI="#LinkAccessDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#ProfessorDepartment"/>
@@ -2525,11 +2505,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal>If an ontology is an example for an academic work, then this ontology has an academic wok</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>exempleFor</Literal>
+            <Literal>HasAcademicWork</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -2561,11 +2541,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal>Look for reference on academic works to find quotes</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>quotedIn</Literal>
+            <Literal>QuotedIn</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -2589,6 +2569,37 @@
                 <Variable IRI="#a"/>
                 <Variable IRI="#w"/>
             </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If an ontology has a domain, then it&apos;s a SpecificDomainOntology</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>SpecificDomainOntology</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Ontology"/>
+                <Variable IRI="#o"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDomain"/>
+                <Variable IRI="#o"/>
+                <Variable IRI="#d"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SpecificDomainOntology"/>
+                <Variable IRI="#o"/>
+            </ClassAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -2672,42 +2683,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
+            <Literal>Look for quotes to find who quoted</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SpecificDomainOntology</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Ontology"/>
-                <Variable IRI="#o"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasDomain"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#d"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#SpecificDomainOntology"/>
-                <Variable IRI="#o"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>quotedBy</Literal>
+            <Literal>QuotedBy</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
